@@ -1,11 +1,12 @@
-def hello_world():
-    task = {
-        "container": {
-            "image": "debian:latest",
-        },
-        "script": "echo Hello, World!",
-    }
+load("github.com/cirrus-templates/helpers", "task", "container", "script", "always", "artifacts")
 
+def hello_world():
     return [
-        task
+        task(
+            name="Hello World",
+            instance=container("debian:latest"),
+            instructions=[
+                script("greeting", "echo Hello, World!"),
+            ],
+        ),
     ]
