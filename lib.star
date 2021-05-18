@@ -1,4 +1,4 @@
-load("github.com/cirrus-templates/helpers", "task", "container", "script", "always", "artifacts")
+load("github.com/cirrus-modules/helpers", "task", "container", "script", "always", "artifacts")
 
 def hello_world():
     return [
