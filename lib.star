@@ -6,7 +6,7 @@ def hello_world():
             name="Hello World",
             instance=container("debian:latest"),
             instructions=[
-                script("greeting", "echo Hello, World!"),
+                script("greeting", "echo \"Hello, World!\""),
             ],
         ),
     ]

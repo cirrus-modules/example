@@ -5,4 +5,4 @@ task:
     cpu: 2
     memory: 4096
   greeting_script:
-    - "echo Hello, World!"
+    - echo "Hello, World!"
