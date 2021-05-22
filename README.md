@@ -1,6 +1,6 @@
-# Example template
+# Example module
 
-An example template that generates a task which prints `Hello, World!`.
+An example module that generates a task which prints `Hello, World!`.
 
 ## Usage
 
@@ -8,5 +8,5 @@ An example template that generates a task which prints `Hello, World!`.
 load("github.com/cirrus-modules/example", "hello_world")
 
 def main(ctx):
-  return hello_world()
+  return [hello_world()]
 ```
